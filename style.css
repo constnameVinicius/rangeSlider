@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#e9e9e9;
+    font-family:'Oswald';
+}
+
+.wrapper{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    border-radius:30px;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.1), #e9e9e9);
+    box-shadow:15px 15px 20px rgba(0,0,0,0.1),
+                    -15px -15px 20px #fff; 
+}
+.range{
+    width:400px;
+    height:20px;
+    border:none;
+    outline:none;
+    appearance: none;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.1),
+                    -5px -5px 10px #fff,
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius:30px;
+    overflow:hidden;
+}
+.range::-webkit-slider-thumb{
+    position:relative;
+    appearance:none;
+    width: 20px;
+    height: 20px;
+    background-color:#fff;
+    border-radius:50%;
+    border: 3px solid #023047;
+    box-shadow:-407px 0px 0px 400px dodgerblue;
+}
+.wrapper span{
+    position:relative;
+    width: 60px;
+    margin-left:15px;
+    text-align:center;
+    font-size:1.3em;
+    font-weight:300;
+    background-color:dodgerblue;
+    color:white;
+    border-radius:25px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+        -5px -5px 10px #fff;
+}

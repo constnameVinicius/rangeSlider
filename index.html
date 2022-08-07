@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+      <input type="range" class="range" max=100 min=0 value=10 onmousemove="changeValue(this.value)">
+      <span id='rangeValue'>10</span>
+    </div>
+
+    <script>
+        function changeValue(value){
+            document.querySelector("#rangeValue").innerHTML = value
+        }
+    </script>
+  </body>
+</html>
